@@ -29,6 +29,7 @@
 #include <atomic>
 #include <chrono>
 #include <thread>
+#include <boost/thread.hpp>
 #include <memory>
 #include <sstream>
 #include <cassert>

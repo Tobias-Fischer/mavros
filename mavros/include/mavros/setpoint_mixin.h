@@ -181,7 +181,7 @@ public:
 		auto tf_transform_cb = std::bind(cbp, static_cast<D *>(this), std::placeholders::_1);
 
 		tf_thread = std::thread([this, tf_transform_cb]() {
-			mavconn::utils::set_this_thread_name("%s", tf_thd_name.c_str());
+			//mavconn::utils::set_this_thread_name("%s", tf_thd_name.c_str());
 
 			mavros::UAS *m_uas_ = static_cast<D *>(this)->m_uas;
 			std::string &_frame_id = static_cast<D *>(this)->tf_frame_id;
